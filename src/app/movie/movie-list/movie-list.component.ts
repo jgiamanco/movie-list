@@ -15,7 +15,7 @@ export class MovieListComponent implements OnInit {
   constructor(private movieService: MovieService, private navbarService: NavbarService,) { }
 
   ngOnInit() {
-    this.movies$ = this.movieService.getMovies();
+    this.movies$ = this.movieService.getMoviesFromHttp();
     this.navbarService.title.next('MovieList');
   }
 
