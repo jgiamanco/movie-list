@@ -122,8 +122,13 @@
               "devServerTarget": "movie-list:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "movie-list"
 }
