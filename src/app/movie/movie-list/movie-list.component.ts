@@ -26,9 +26,7 @@ import { trigger, transition, query, style, stagger, animate } from '@angular/an
         query(
           ':leave',
           [animate('500ms', style({ opacity: 0, transform: 'rotate(90deg)'}))],
-          {
-            optional: true,
-          },
+          { optional: true },
         ),
       ]),  
     ]),
